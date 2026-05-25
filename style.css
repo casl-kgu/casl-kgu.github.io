@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #1a3a5c;
+    --navy-dark: #0e2440;
+    --cyan: #00b4d8;
+    --cyan-dark: #0096b7;
+    --text: #1e293b;
+    --subtext: #64748b;
+    --light: #f8fafc;
+    --border: #e2e8f0;
+}
+
+body {
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+/* ── Navigation ── */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--navy);
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 56px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav .logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.08rem;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.88rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 4px;
+    transition: color 0.15s, background 0.15s;
+}
+
+nav a:hover {
+    color: var(--cyan);
+    background: rgba(255,255,255,0.07);
+}
+
+nav a.active {
+    color: var(--cyan);
+    border-bottom: 2px solid var(--cyan);
+}
+
+/* ── Hero ── */
+.hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: white;
+    padding: 6rem 3rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+}
+
+.hero .fullname {
+    color: var(--cyan);
+    font-size: 1.15rem;
+    margin-top: 0.6rem;
+    font-weight: 500;
+}
+
+.hero .fullname-ko {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+}
+
+.hero .affil {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.hero .desc {
+    color: #cbd5e1;
+    margin-top: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.95rem;
+}
+
+.hero .desc-ko {
+    color: #94a3b8;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.88rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 2.2rem;
+    padding: 0.75rem 2.2rem;
+    background: var(--cyan);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.03rem;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.hero .btn:hover {
+    background: var(--cyan-dark);
+    transform: translateY(-1px);
+}
+
+/* ── Sections ── */
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+section {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 3px solid var(--cyan);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.section-title-ko {
+    font-size: 0.9rem;
+    color: var(--subtext);
+    margin-bottom: 1.8rem;
+}
+
+/* ── About ── */
+.about-text {
+    color: var(--text);
+    font-size: 0.97rem;
+    margin-bottom: 0.8rem;
+    max-width: 800px;
+}
+
+.about-text-ko {
+    color: var(--subtext);
+    font-size: 0.92rem;
+    max-width: 800px;
+}
+
+/* ── Research Cards ── */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.card {
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--cyan);
+    border-radius: 8px;
+    padding: 1.4rem;
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 180, 216, 0.12);
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+}
+
+.card .card-ko {
+    font-size: 0.82rem;
+    color: var(--cyan-dark);
+    margin-bottom: 0.6rem;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: var(--subtext);
+}
+
+/* ── Members ── */
+.member-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    max-width: 600px;
+}
+
+.member-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.member-info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.member-info .role {
+    font-size: 0.88rem;
+    color: var(--cyan-dark);
+    font-weight: 500;
+    margin-top: 0.15rem;
+}
+
+.member-info .affil {
+    font-size: 0.85rem;
+    color: var(--subtext);
+    margin-top: 0.2rem;
+}
+
+.member-info a {
+    font-size: 0.85rem;
+    color: var(--cyan-dark);
+    text-decoration: none;
+    margin-top: 0.4rem;
+    display: inline-block;
+}
+
+.member-info a:hover { text-decoration: underline; }
+
+/* ── Join Us ── */
+.joinus-box {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 800px;
+}
+
+.joinus-box h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 0.3rem;
+}
+
+.joinus-box .ko {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 1.4rem;
+}
+
+.joinus-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.joinus-box ul li {
+    padding: 0.4rem 0;
+    font-size: 0.92rem;
+    color: #cbd5e1;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    gap: 0.7rem;
+}
+
+.joinus-box ul li::before {
+    content: "▸";
+    color: var(--cyan);
+    flex-shrink: 0;
+}
+
+.joinus-box + .joinus-box {
+    margin-top: 1.5rem;
+}
+
+.joinus-hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    margin: 1.2rem 0 1rem;
+}
+
+.joinus-box .ko-list li {
+    color: #94a3b8;
+    font-size: 0.88rem;
+}
+
+.joinus-box ul.joinus-sublist {
+    margin-top: 0.4rem;
+    padding-left: 1.2rem;
+}
+
+.joinus-box ul.joinus-sublist li {
+    border-bottom: none;
+    padding: 0.15rem 0;
+}
+
+.joinus-box ul.joinus-sublist li::before {
+    content: "–";
+    color: #94a3b8;
+}
+
+.joinus-box ul li a,
+.joinus-box .joinus-text a,
+.joinus-box .joinus-text-ko a {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+.joinus-box ul li a:hover,
+.joinus-box .joinus-text a:hover,
+.joinus-box .joinus-text-ko a:hover {
+    text-decoration: underline;
+}
+
+.joinus-text {
+    font-size: 0.92rem;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.joinus-text-ko {
+    font-size: 0.88rem;
+    color: #94a3b8;
+    line-height: 1.8;
+}
+
+.joinus-box .contact {
+    margin-top: 1.4rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.joinus-box .contact a {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+/* ── Members Groups ── */
+.members-group {
+    margin-bottom: 2.5rem;
+}
+
+.members-group-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--subtext);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.members-empty {
+    color: var(--subtext);
+    font-size: 0.92rem;
+}
+
+.members-empty a {
+    color: var(--cyan-dark);
+    text-decoration: none;
+}
+
+.members-empty a:hover { text-decoration: underline; }
+
+/* ── Publications ── */
+.pub-category {
+    margin-bottom: 2.5rem;
+}
+
+.pub-category-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--subtext);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.pub-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pub-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.pub-list li:last-child { border-bottom: none; }
+
+.pub-title {
+    font-weight: 500;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.pub-authors {
+    font-size: 0.87rem;
+    color: var(--subtext);
+}
+
+.pub-venue {
+    font-size: 0.85rem;
+    color: var(--cyan-dark);
+}
+
+.pub-venue a {
+    color: var(--cyan-dark);
+    text-decoration: none;
+}
+
+.pub-venue a:hover { text-decoration: underline; }
+
+/* ── Contact ── */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 800px;
+}
+
+.contact-block {
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.8rem;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    color: var(--cyan-dark);
+    margin-bottom: 0.5rem;
+}
+
+.contact-value {
+    font-size: 0.92rem;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.contact-value a {
+    color: var(--cyan-dark);
+    text-decoration: none;
+}
+
+.contact-value a:hover { text-decoration: underline; }
+
+.contact-label-mt {
+    margin-top: 1.5rem;
+}
+
+.contact-value-ko {
+    font-size: 0.88rem;
+    color: var(--subtext);
+    line-height: 1.8;
+    margin-top: 0.8rem;
+}
+
+/* ── Footer ── */
+footer {
+    background: var(--navy-dark);
+    color: #64748b;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    line-height: 1.9;
+}
+
+footer a {
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+footer a:hover { color: var(--cyan); }
+
+footer .footer-name {
+    color: #94a3b8;
+    font-weight: 700;
+}
+
+footer .footer-email {
+    margin-top: 0.5rem;
+}
+
+footer .footer-copy {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* section-title on h2 resets browser default margin */
+h2.section-title {
+    margin: 0;
+}
