@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -44,12 +43,27 @@ nav {
 }
 
 nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: #ffffff;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.08rem;
     margin-right: auto;
     text-decoration: none;
+}
+
+nav .logo img {
+    display: block;
+    height: 36px;
+    width: auto;
+}
+
+nav .logo:hover {
+    color: #ffffff;
+    background: transparent;
+    opacity: 0.85;
 }
 
 nav a {
@@ -111,15 +125,6 @@ nav a.active {
     margin-left: auto;
     margin-right: auto;
     font-size: 1rem;
-}
-
-.hero .desc-ko {
-    color: #94a3b8;
-    margin-top: 0.5rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.95rem;
 }
 
 .hero .btn {
@@ -346,21 +351,6 @@ section:last-child {
     font-size: 0.88rem;
 }
 
-.joinus-box ul.joinus-sublist {
-    margin-top: 0.4rem;
-    padding-left: 1.2rem;
-}
-
-.joinus-box ul.joinus-sublist li {
-    border-bottom: none;
-    padding: 0.15rem 0;
-}
-
-.joinus-box ul.joinus-sublist li::before {
-    content: "–";
-    color: #94a3b8;
-}
-
 .joinus-box ul li a,
 .joinus-box .joinus-text a,
 .joinus-box .joinus-text-ko a {
@@ -385,17 +375,6 @@ section:last-child {
     font-size: 0.93rem;
     color: #94a3b8;
     line-height: 1.8;
-}
-
-.joinus-box .contact {
-    margin-top: 1.4rem;
-    font-size: 0.93rem;
-    color: #94a3b8;
-}
-
-.joinus-box .contact a {
-    color: var(--cyan);
-    text-decoration: none;
 }
 
 /* ── Members Groups ── */
@@ -554,9 +533,11 @@ footer a {
 
 footer a:hover { color: var(--cyan); }
 
-footer .footer-name {
-    color: #94a3b8;
-    font-weight: 700;
+footer .footer-logo {
+    display: block;
+    width: 280px;
+    height: auto;
+    margin: 0 auto 0.5rem;
 }
 
 footer .footer-email {
@@ -593,6 +574,10 @@ h2.section-title {
     nav .logo {
         width: 100%;
         margin-right: 0;
+    }
+
+    nav .logo img {
+        height: 30px;
     }
 
     nav a:not(.logo) {

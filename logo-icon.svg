@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 24 62 94">
+
+  <defs>
+    <clipPath id="sh">
+      <path d="M22,31 H70 V77 Q70,100 46,111 Q22,100 22,77 Z"/>
+    </clipPath>
+  </defs>
+
+  <path d="M22,31 H70 V77 Q70,100 46,111 Q22,100 22,77 Z" fill="#1a3a5c"/>
+
+  <g clip-path="url(#sh)" stroke="#142d4a" stroke-width="1.5" fill="none">
+    <line x1="0"   y1="55"  x2="95" y2="55"/>
+    <line x1="0"   y1="77"  x2="95" y2="77"/>
+    <line x1="0"   y1="96"  x2="95" y2="96"/>
+    <line x1="34"  y1="0"   x2="34" y2="130"/>
+    <line x1="46"  y1="0"   x2="46" y2="130"/>
+    <line x1="58"  y1="0"   x2="58" y2="130"/>
+  </g>
+
+  <path d="M22,31 H70 V77 Q70,100 46,111 Q22,100 22,77 Z"
+        fill="none" stroke="#00b4d8" stroke-width="2" opacity="0.4"/>
+
+  <path d="M38,73 V60 A8,8 0 0,1 54,60 V73"
+        fill="none" stroke="white" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="32" y="73" width="28" height="19" rx="4" fill="#00b4d8"/>
+
+  <circle cx="46" cy="80" r="4"             fill="#1a3a5c"/>
+  <rect   x="44" y="80"  width="4" height="7" rx="1.5" fill="#1a3a5c"/>
+
+</svg>

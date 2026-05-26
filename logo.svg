@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 142" width="450" height="142">
+
+  <defs>
+    <clipPath id="sh">
+      <path d="M29,31 H77 V77 Q77,100 53,111 Q29,100 29,77 Z"/>
+    </clipPath>
+  </defs>
+
+  <path d="M29,31 H77 V77 Q77,100 53,111 Q29,100 29,77 Z" fill="#1a3a5c"/>
+
+  <g clip-path="url(#sh)" stroke="#142d4a" stroke-width="1.5" fill="none">
+    <line x1="0"   y1="55"  x2="110" y2="55"/>
+    <line x1="0"   y1="77"  x2="110" y2="77"/>
+    <line x1="0"   y1="96"  x2="110" y2="96"/>
+    <line x1="41"  y1="0"   x2="41"  y2="142"/>
+    <line x1="53"  y1="0"   x2="53"  y2="142"/>
+    <line x1="65"  y1="0"   x2="65"  y2="142"/>
+  </g>
+
+  <path d="M29,31 H77 V77 Q77,100 53,111 Q29,100 29,77 Z"
+        fill="none" stroke="#00b4d8" stroke-width="2" opacity="0.4"/>
+
+  <path d="M45,73 V60 A8,8 0 0,1 61,60 V73"
+        fill="none" stroke="white" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="39" y="73" width="28" height="19" rx="4" fill="#00b4d8"/>
+
+  <circle cx="53" cy="80" r="4"             fill="#1a3a5c"/>
+  <rect   x="51" y="80"  width="4" height="7" rx="1.5" fill="#1a3a5c"/>
+
+  <line x1="106" y1="22" x2="106" y2="120" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="122" y="82"
+        font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, Arial, sans-serif"
+        font-size="58" font-weight="900" fill="#1a3a5c" letter-spacing="5">CASL</text>
+
+  <rect x="122" y="91" width="270" height="3" rx="1.5" fill="#00b4d8"/>
+
+  <text x="124" y="112"
+        font-family="Arial, 'Helvetica Neue', sans-serif"
+        font-size="13.5" fill="#1e293b" letter-spacing="0.5">Cryptography and Applied Security Lab</text>
+
+  <text x="124" y="131"
+        font-family="'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif"
+        font-size="12" fill="#64748b">암호 및 응용 보안 연구실</text>
+
+</svg>
